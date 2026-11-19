@@ -1,0 +1,8 @@
+local programs = require("config/programs")
+hl.on("hyprland.start",function ()
+    hl.exec_cmd("kitty")
+    hl.exec_cmd("nm-applet")
+    hl.exec_cmd("qs")
+    hl.exec_cmd(programs.browser)
+    hl.exec_cmd("hyprpaper")
+end)
